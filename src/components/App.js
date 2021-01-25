@@ -28,7 +28,8 @@ export default function App(props) {
         <h1 className="store-header">Emily&apos;s Trinkets</h1>
         <div className="nav-links">
           {/* 👉 STEP 3 - Make Links to navigate us Home (`/`) and Shop (`/items-list`) */}
-          <Link></Link>
+          <Link to="/">Home</Link>
+          <Link to="/items-list">Shop</Link>
           {/* <a
             onClick={(evt) => {
               evt.preventDefault();
