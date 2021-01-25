@@ -8,7 +8,9 @@ export default function Home() {
 
   const history = useHistory();
 
-  const routeToShop = () => {};
+  const routeToShop = () => {
+    history.push();
+  };
 
   return (
     <div className="home-wrapper">
