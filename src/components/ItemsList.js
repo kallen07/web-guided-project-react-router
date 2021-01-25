@@ -1,22 +1,20 @@
-import React from 'react'
+import React from "react";
 // We'll need a Link and the useRouteMatch hook from 'react-router-dom'
-
+import { Link, useRouteMatch } from "react-router-dom";
 
 export default function ItemsList(props) {
-  const { items } = props
+  const { items } = props;
 
   // We'll grab the current URL using the hook
 
   return (
-    <div className='items-list-wrapper'>
-      {items.map(item => (
-        <div
-          className='item-card'
-          key={item.id}
-        >
+    <div className="items-list-wrapper">
+      {items.map((item) => (
+        <div className="item-card" key={item.id}>
           {/* 👉 STEP 6 - Link starts, navigates us from <current url> to <current url>/<id of the item> */}
+          <Link></Link>
           <img
-            className='items-list-image'
+            className="items-list-image"
             src={item.imageUrl}
             alt={item.name}
           />
@@ -27,5 +25,5 @@ export default function ItemsList(props) {
         </div>
       ))}
     </div>
-  )
+  );
 }
