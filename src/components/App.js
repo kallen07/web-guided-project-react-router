@@ -30,15 +30,6 @@ export default function App(props) {
           {/* 👉 STEP 3 - Make Links to navigate us Home (`/`) and Shop (`/items-list`) */}
           <Link to="/">Home</Link>
           <Link to="/items-list">Shop</Link>
-          {/* <a
-            onClick={(evt) => {
-              evt.preventDefault();
-              history.pushState(null, null, "/foo");
-            }}
-            href="/"
-          >
-            Home
-          </a> */}
         </div>
       </nav>
 
