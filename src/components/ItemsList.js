@@ -6,6 +6,7 @@ export default function ItemsList(props) {
   const { items } = props;
 
   // We'll grab the current URL using the hook
+  const {}
 
   return (
     <div className="items-list-wrapper">
