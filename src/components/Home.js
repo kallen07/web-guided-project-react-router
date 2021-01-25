@@ -9,7 +9,9 @@ export default function Home() {
   const history = useHistory();
 
   const routeToShop = () => {
-    // react router own 
+    // react router own version of the history api
+    // for example, we could navigate to different places,
+    // after checking the auth status (make sure that user has permissions)
     console.log(history);
     history.push("/items-list");
   };
