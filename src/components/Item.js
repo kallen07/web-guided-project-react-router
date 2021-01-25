@@ -1,6 +1,6 @@
 import React from "react";
 // We'll need quite a few imports from react-router-dom
-import { useParams, NavLink, useRouteMatch } from "react-router-dom";
+import { useParams, NavLink, useRouteMatch, Route } from "react-router-dom";
 import ItemDetails from "./ItemDetails";
 
 export default function Item(props) {
@@ -14,7 +14,7 @@ export default function Item(props) {
 
   const { itemID } = useParams();
   console.log(itemID);
-  const { url } = useRouteMatch();
+  const { url, path } = useRouteMatch();
 
   const item =
     items.find((item) => {
