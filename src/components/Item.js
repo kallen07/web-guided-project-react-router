@@ -15,7 +15,7 @@ export default function Item(props) {
   const { itemID } = useParams();
   console.log(itemID);
 
-  const item = {};
+  const item = items.find((item) => item.id === itemID);
 
   return (
     <div className="item-wrapper">
