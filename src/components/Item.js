@@ -18,7 +18,7 @@ export default function Item(props) {
 
   const item =
     items.find((item) => {
-      return item.id === itemID;
+      return item.id == itemID;
     }) || {};
 
   return (
