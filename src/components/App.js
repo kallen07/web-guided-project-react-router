@@ -28,7 +28,8 @@ export default function App(props) {
         <h1 className="store-header">Emily&apos;s Trinkets</h1>
         <div className="nav-links">
           {/* 👉 STEP 3 - Make Links to navigate us Home (`/`) and Shop (`/items-list`) */}
-          <a
+          <Link></Link>
+          {/* <a
             onClick={(evt) => {
               evt.preventDefault();
               history.pushState(null, null, "/foo");
@@ -36,7 +37,7 @@ export default function App(props) {
             href="/"
           >
             Home
-          </a>
+          </a> */}
         </div>
       </nav>
 
