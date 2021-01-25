@@ -14,7 +14,7 @@ export default function Item(props) {
 
   const { itemID } = useParams();
   console.log(itemID);
-  const {url}
+  const { url } = useRouteMatch();
 
   const item =
     items.find((item) => {
@@ -41,6 +41,10 @@ export default function Item(props) {
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
       {/* These Routes should render <ItemDetails /> */}
+
+      <Route>
+        
+      </Route>
 
       {/* 👉 STEP 10 - Shorten paths and urls with `useRouteMatch` hook */}
     </div>
