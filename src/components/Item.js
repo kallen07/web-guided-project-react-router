@@ -13,6 +13,7 @@ export default function Item(props) {
   // we use this hook to grab they dynamic parts of the path (:itemID).
 
   const { itemID } = useParams();
+  console.log(itemID);
 
   const item = {};
 
